@@ -5,12 +5,6 @@ import os
 import random
 from config import *
 
-def mejor_ranking(mejor, rankin):
-    for i in rankin:
-        if i['puntos'] > mejor['puntos']:
-            mejor = i
-    return mejor
-
 def dibujar_tarjeta(pantalla, texto, fuente, rect, color_fondo, color_texto):
     pygame.draw.rect(pantalla, color_fondo, rect, border_radius=10)
     pygame.draw.rect(pantalla, color_texto, rect, 2, border_radius=10)
@@ -146,10 +140,7 @@ def usar_bomba(opciones, correcta):
 
 
 def usar_x2(puntuacion, puntos_correcta):
-    return puntuacion + puntos_correcta * 2
-
-def usar_doble_chance(fallo_anterior):
-    return not fallo_anterior  
+    return puntuacion + puntos_correcta * 2 
 
 def usar_pasar():
     return True
