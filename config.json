@@ -1,0 +1,9 @@
+{
+    "cantidad_vidas": 5,
+    "puntos_correcta": 10,
+    "puntos_incorrecta": -2,
+    "tiempo_segundos": 90,
+    "segundos_extra": 10,
+    "volumen": 1,
+    "dificultad": "Facil"
+}
